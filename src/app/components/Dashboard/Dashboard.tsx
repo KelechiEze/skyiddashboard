@@ -115,7 +115,7 @@ const ActivityItem = ({ title, description, color }: ActivityItemProps) => (
       <p className="activity-title"><strong>{title}</strong></p>
       <p className="activity-description">{description}</p>
     </div>
-    <button className="create-btn">Create</button>
+    <button className="create-btn">View</button>
   </div>
 );
 
