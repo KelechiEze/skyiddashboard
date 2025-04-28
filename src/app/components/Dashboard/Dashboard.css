@@ -148,6 +148,37 @@
   color: var(--foreground);
 }
 
+/* Activity Header Styling */
+.activity-header {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space between header and content */
+}
+
+.activity-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--foreground); /* Assuming var(--foreground) is defined */
+  margin: 0; /* Remove default margin */
+}
+
+.activity-header button {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 5px 10px;
+}
+
+.activity-header button:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
 /* Individual Activity Item */
 .activity {
   display: flex;
@@ -199,4 +230,35 @@
 .create-btn:hover {
   background: linear-gradient(to right, #4f46e5, #3730a3);
   transform: scale(1.05);
+}
+
+/* View More / View Less Button */
+.view-more-btn {
+  font-weight: bold;
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.view-more-btn:hover {
+  color: #0056b3;
+}
+
+.view-more-btn:focus {
+  outline: none;
+}
+
+/* Recent Activity Header Styling */
+.recent-activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Activity List */
+.activity-list {
+  margin-top: 15px;
 }
