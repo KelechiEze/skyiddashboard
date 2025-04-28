@@ -1,0 +1,205 @@
+/* Dashboard Main Area */
+.dashboard {
+    margin-left: 270px;
+    padding: 30px 40px;
+    background-color: #f3f6fc;
+    min-height: 100vh;
+    max-width: calc(100% - 270px);
+    overflow-x: hidden;
+  }
+  
+  /* Dashboard Heading */
+  .dashboard h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1f2937;
+  }
+  
+  .dashboard p {
+    margin-top: 5px;
+    color: #6b7280;
+    font-weight: 600;
+  }
+  
+  /* Cards Section */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 30px;
+    width: 300px;
+    height: 160px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card-content h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: grey;
+    font-weight: 700;
+  }
+  
+  .card-content p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .card-icon {
+    font-size: 30px;
+    color: #22c55e;
+    margin-top: -40px;
+  }
+  
+  /* Lower Section (Pie Chart + Recent Activity) */
+  .lower-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Pie Chart Container */
+  .pie-chart-container {
+    background: #ffffff;
+    flex: 1;
+    min-width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .pie-chart-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #1f2937;
+  }
+  
+  /* Pie Chart */
+  .pie-chart {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(#22c55e 0% 75%, #6b7280 75% 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 22px;
+    color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Status Numbers Below the Chart */
+  .status-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  .status-numbers p {
+    margin: 0;
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  /* Recent Activity Section */
+  .recent-activity {
+    background: #ffffff;
+    flex: 1;
+    min-width: 300px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .recent-activity h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1f2937;
+  }
+  
+  /* Individual Activity Item */
+  .activity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 4px solid #4f46e5;
+    transition: background 0.3s ease;
+  }
+  
+  .activity:hover {
+    background: #e0e7ff;
+  }
+  
+  .activity p {
+    margin: 2px 0;
+    color: #374151;
+    font-size: 14px;
+  }
+  
+  /* Status Dot */
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .green {
+    background-color: #22c55e;
+  }
+  
+  /* Create Button */
+  .create-btn {
+    margin-left: auto;
+    background: linear-gradient(to right, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .create-btn:hover {
+    background: linear-gradient(to right, #4f46e5, #3730a3);
+    transform: scale(1.05);
+  }
+  
