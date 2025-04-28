@@ -1,3 +1,5 @@
+'use client';
+
 import { FaUser, FaUserCheck, FaUserTimes, FaFileAlt } from "react-icons/fa";
 import "./Dashboard.css";
 
